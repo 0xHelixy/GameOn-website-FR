@@ -89,7 +89,18 @@ function validate() {
   }
 
   if (isValid) {
-    localStorage.removeItem('formData'); // Nettoyer localStorage
+    // show confirmation message
+    const confirmationMessage = document.getElementById('confirmation-message');
+    confirmationMessage.style.display = 'block';
+
+    // hide form
+    // modalbg.style.display = 'none';
+
+    // reset form
+    document.forms['reserve'].reset();
+
+    // no submit form if not valid
+    return false;
   }
 
   return isValid;
