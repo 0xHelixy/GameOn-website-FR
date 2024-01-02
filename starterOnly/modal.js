@@ -23,8 +23,6 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
-
-
 // function to hide the modal
 function closeModal() {
   modalbg.style.display = "none";
