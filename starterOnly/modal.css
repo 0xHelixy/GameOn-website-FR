@@ -234,6 +234,7 @@ main {
   position: relative;
   color: #fff;
   padding: 0;
+  min-height: 140px;
 }
 
 @media screen and (max-width: 768px) {
@@ -481,6 +482,7 @@ input[data-error]::after {
   color: #fff;
   position: relative;
   text-align: left;
+
 }
 
 .hero-content::after {
@@ -601,5 +603,3 @@ footer {
   border-radius: 8px;
   text-align: center;
 }
-
-

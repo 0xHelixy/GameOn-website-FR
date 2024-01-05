@@ -21,6 +21,10 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 // launch modal form
 function launchModal() {
   modalbg.style.display = "block";
+  document.getElementById('modal-margin').style.margin = '5% auto';
+  document.getElementById('modal-container').style.display = 'block';
+  document.getElementById('confirmation-message').style.display = 'none';
+
 }
 
 // function to hide the modal
@@ -92,7 +96,8 @@ function validate() {
     confirmationMessage.style.display = 'block';
 
     // hide form
-    // modalbg.style.display = 'none';
+    document.getElementById('modal-margin').style.margin = '25% auto';
+    document.getElementById('modal-container').style.display = 'none';
 
     // reset form
     document.forms['reserve'].reset();
